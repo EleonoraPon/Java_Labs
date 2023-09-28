@@ -186,13 +186,17 @@ public class Main
 
     public static void task6()
     {
-        int[] mas = {1, 2, 3, 4, 5, 6, 7};
+        int n = 3;
+        int[][] mas = {{1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
         int sum = 0;
 
-        for(int i = 0; i < mas.length; i++)
-        {
-            sum += mas[i];
-        }
+        for(int i = 0; i < n; i++)
+        for (int j = 0; j < n; j ++)
+            {
+                sum += mas[i][j];
+            }
 
         System.out.println(sum);
     }
